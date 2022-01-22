@@ -75,7 +75,7 @@
                         bindings = <
    &kp ESC   &kp TAB   &kp Q &kp W &kp E &kp R      &kp I &kp O    &kp UP   &none     &none   &none
    &kp CAPS  &kp LSHFT &kp A &kp S &kp D &kp F      &none &kp LEFT &kp DOWN &kp RIGHT &none   &kp RET
-   &none     &kp LCTRL &kp Z &kp X &kp C &kp C      &none &none    &kp M    &none     &kpnone &tog 4
+   &none     &kp LCTRL &kp Z &kp X &kp C &kp C      &none &none    &kp M    &none     &none &tog 4
                             &kp ESC &none &kp SPC  &none   &none   &none
                         >;
 				};
