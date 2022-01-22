@@ -48,7 +48,7 @@
                         bindings = <
    &kp TAB &none &none &kp LC(LEFT) &kp LC(RIGHT) &none      &kp C_VOL_UP &kp LC(LEFT)     &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &none
    &kp DEL &none &none &kp LC(DOWN) &kp LC(UP)    &none      &kp C_VOL_DN &kp LEFT         &kp DOWN     &kp UP     &kp RIGHT     &trans
-   &none   &none &none &none        &none         &none      &kp C_MUTE   &kp C_PLAY_PAUSE &kp C_PREV   &kp C_NEXT &none         &tog 4
+   &none   &none &none &none        &none         &none      &kp C_MUTE   &kp C_PLAY_PAUSE &kp C_PREV   &kp C_NEXT &none         &mo 4
                        &trans       &trans        &trans     &trans       &trans           &trans
                          >;
                  };
@@ -62,7 +62,7 @@
                         bindings = <
    &kp ESC        &none         &none         &none          &none         &none        &kp F7 &kp F8  &kp F9 &kp F12 &none &none
    &bt BT_CLR     &none         &none         &none          &none         &none        &kp F4 &kp F5  &kp F6 &kp F11 &none &none
-   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4 &none        &kp F1 &kp F2  &kp F3 &kp F10 &none &tog 4
+   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4 &none        &kp F1 &kp F2  &kp F3 &kp F10 &none &mo 4
                                               &none LGUI     &none         &none        &none  &none   &none
 						>;
 				};
@@ -75,7 +75,7 @@
                         bindings = <
    &kp ESC   &kp TAB   &kp Q &kp W &kp E &kp R      &kp I &kp O    &kp UP   &none     &none   &none
    &kp CAPS  &kp LSHFT &kp A &kp S &kp D &kp F      &none &kp LEFT &kp DOWN &kp RIGHT &none   &kp RET
-   &none     &kp LCTRL &kp Z &kp X &kp C &kp C      &none &none    &kp M    &none     &none &tog 4
+   &none     &kp LCTRL &kp Z &kp X &kp C &kp C      &none &none    &kp M    &none     &none &mo 4
                             &kp ESC &none &kp SPC  &none   &none   &none
                         >;
 				};
