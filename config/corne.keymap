@@ -7,6 +7,7 @@
  #include <behaviors.dtsi>
  #include <dt-bindings/zmk/keys.h>
  #include <dt-bindings/zmk/bt.h>
+ #include <dt-bindings/zmk/mouse.h>
  
  &mt {
     flavor = "tap-preferred";
@@ -24,12 +25,12 @@
  // |  ESC |  Q  |  W    |  F    |  P      |  G  |   |  J  |  L      |  U    |  Y    |  ;  | BKSP    |
  // |  TAB |  A  | ALT R | GUI S |  CTRL T |  D  |   |  H  | CTRL  N | GUI E | ALT I |  O  | ENT     |
  // | GUI_ |  Z  |  X    |  C    |  V      |  B  |   |  N  |  M      |  ,    |  .    |  /  | SHFT "  |
- //                 | GUI | layer1 | SHFT/BACKSP |   | SPC | layer 2  | layer 3 |
+ //              | layer3 | layer1 | SHFT/BACKSP |   | SPC | layer 2  | layer 3 |
                          bindings = <
    &kp ESC     &kp Q &kp W       &kp F      &kp P       &kp G               &kp J   &kp L        &kp U      &kp Y        &kp SEMI &kp BSPC
    &kp TAB     &kp A &mt LALT R  &mt LGUI S &mt LCTRL T &kp D               &kp H   &mt LCTRL N  &mt LGUI E &mt LALT I   &kp O    &kp RET
    &kp LG(SPC) &kp Z &kp X       &kp C      &kp V       &kp B               &kp K   &kp M        &kp COMMA  &kp DOT      &kp FSLH &mt LSHIFT SINGLE_QUOTE
-                                 &kp LGUI      &mo 1    &mt LSHIFT BKSP     &kp SPC &mo 2        &mo 3
+                                 &mo3      &mo 1    &mt LSHIFT BKSP     &kp SPC &mo 2        &mo 3
                         >;
                  };
                  lower_layer {
@@ -62,15 +63,15 @@
 				
 				mouse_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC    | XXX | Wheel Left | Mouse Up    |  Wheel right |  Wheel up    |     |  F7  |  F8 | F9 | F12 | XXX | XXX       |
-// |  BT CLR | XXX | Mouse Left | Mouse Down  |  Mouse Right |  Wheel down  |     |  F4  |  F5 | F6 | F11 | XXX | XXX       |
-// |  BT1    | BT2 | BT3        |  BT4        |  BT5         |  XXX         |     |  F1  |  F2 | F3 | F10 | XXX | TOGGLE 4  |
-//                              |             | Mouse click  |  Right click |     |      |     |    |
+// |  ESC    | Wheel up   | Wheel Left | Mouse Up    |  Wheel right | Left click   |     |  F7  |  F8 | F9 | F12 | XXX | BT CLR    |
+// |  XXX    | Wheel down | Mouse Left | Mouse Down  |  Mouse Right | Right click  |     |  F4  |  F5 | F6 | F11 | XXX | XXX       |
+// |  BT1    | BT2        | BT3        |  BT4        |  BT5         |  XXX         |     |  F1  |  F2 | F3 | F10 | XXX | TOGGLE 4  |
+//                                |             | Left click  |  Right click |     |      |     |    |
                         bindings = <
-   &kp ESC      &none        &none        &none        &none          &none        &kp F7 &kp F8  &kp F9 &kp F12 &none &none
-   &bt BT_CLR   &none        &none        &none        &none          &none        &kp F4 &kp F5  &kp F6 &kp F11 &none &none
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 04  &none        &kp F1 &kp F2  &kp F3 &kp F10 &none &tog 4
-                                         &none          &none         &none        &none  &none   &none
+   &kp ESC      &mwh SCROLL_UP   &mwh SCROLL_LEFT      &mmv MOVE_UP   &mwh SCROLL_RIGHT &mkp RCLK        &kp F7 &kp F8  &kp F9 &kp F12 &none &bt BT_CLR
+   &trans       &mwh SCROLL_DOWN &mmv MOVE_LEFT        &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mkp LCLK        &kp F4 &kp F5  &kp F6 &kp F11 &none &none
+   &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3   &bt BT_SEL 04     &none            &kp F1 &kp F2  &kp F3 &kp F10 &none &tog 4
+                                                       &none          &mkp LCLK         &mkp RCLK        &none  &none   &none
 						>;
 				};
                 game_layer {
