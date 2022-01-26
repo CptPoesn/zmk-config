@@ -66,12 +66,12 @@
 // |  ESC    | Wheel up   | Wheel Left | Mouse Up    |  Wheel right | Left click   |     |  F7  |  F8 | F9 | F12 | XXX | BT CLR    |
 // |  XXX    | Wheel down | Mouse Left | Mouse Down  |  Mouse Right | Right click  |     |  F4  |  F5 | F6 | F11 | XXX | XXX       |
 // |  BT1    | BT2        | BT3        |  BT4        |  BT5         |  XXX         |     |  F1  |  F2 | F3 | F10 | XXX | TOGGLE 4  |
-//                                |             | Left click  |  Right click |     |      |     |    |
+//                                |             | Right click  |  Left click |     |     |      |    |
                         bindings = <
    &kp ESC      &mwh SCROLL_DOWN &mwh SCROLL_LEFT      &mmv MOVE_UP   &mwh SCROLL_RIGHT &mkp RCLK        &kp F7 &kp F8  &kp F9 &kp F12 &none &bt BT_CLR
    &trans       &mwh SCROLL_UP   &mmv MOVE_LEFT        &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mkp LCLK        &kp F4 &kp F5  &kp F6 &kp F11 &none &none
    &bt BT_SEL 0 &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3   &bt BT_SEL 04     &none            &kp F1 &kp F2  &kp F3 &kp F10 &none &tog 4
-                                                       &none          &mkp LCLK         &mkp RCLK        &none  &none   &none
+                                                       &none          &mkp RCLK         &mkp LCLK        &none  &none   &none
 						>;
 				};
                 game_layer {
