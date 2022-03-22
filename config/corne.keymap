@@ -69,9 +69,9 @@
 // |  BT1           | BT2        | BT3        |  BT4        |  BT5         |  XXX         |     |  F1  |  F2 | F3 | F10 | &out OUT_TOG | TOGGLE 4  |
 //                              |             | Right click  |  Left click |              |     |      |    |
                         bindings = <
-   &kp ESC        &mwh SCROLL_DOWN &mwh SCROLL_LEFT      &mmv MOVE_UP   &mwh SCROLL_RIGHT &mkp RCLK        &kp F7 &kp F8  &kp F9 &kp F12 &none &bt BT_CLR
-   &kp LG(LC(N4)) &mwh SCROLL_UP   &mmv MOVE_LEFT        &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mkp LCLK        &kp F4 &kp F5  &kp F6 &kp F11 &none &none
-   &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3   &bt BT_SEL 04     &none            &kp F1 &kp F2  &kp F3 &kp F10 &none &tog 4
+   &kp ESC        &mwh SCROLL_DOWN &mwh SCROLL_LEFT      &mmv MOVE_UP   &mwh SCROLL_RIGHT &mkp RCLK        &kp F7 &kp F8  &kp F9 &kp F12 &out OUT_BLE &bt BT_CLR
+   &kp LG(LS(N4)) &mwh SCROLL_UP   &mmv MOVE_LEFT        &mmv MOVE_DOWN &mmv MOVE_RIGHT   &mkp LCLK        &kp F4 &kp F5  &kp F6 &kp F11 &out OUT_USB &none
+   &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3   &bt BT_SEL 04     &none            &kp F1 &kp F2  &kp F3 &kp F10 &out OUT_TOG &tog 4
                                                          &none          &mkp RCLK         &mkp LCLK        &none  &none   &none
 						>;
 				};
