@@ -82,10 +82,10 @@
 // |  XXX  | CTRL |  Z  |  X  |  C  |  C  |   |  X  |  X     |  M      |  X     |  X  | TOGGLE 4 |
 //                      | ESC |  X  |  _  |   | TAB |  X     |  X      |
                         bindings = <
-   &kp ESC   &kp TAB   &kp Q &kp W &kp E &kp R      &kp I &kp O    &kp UP   &none     &none   &tog4
+   &kp ESC   &kp TAB   &kp Q &kp W &kp E &kp R      &kp I &kp O    &kp UP   &none     &none   &tog 4
    &kp CAPS  &kp LSHFT &kp A &kp S &kp D &kp F      &none &kp LEFT &kp DOWN &kp RIGHT &none   &kp RET
    &none     &kp LCTRL &kp Z &kp X &kp C &kp C      &none &none    &kp M    &none     &none   &tog 4
-                            &kp ESC &none &kp SPC  &kp TAB   &none   &none
+                            &kp ESC &none &kp SPC   &kp TAB   &none   &none
                         >;
 				};
          };
