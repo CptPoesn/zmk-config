@@ -16,6 +16,17 @@
 };
 
 / {
+
+    behaviors {
+        tdbksp: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_backspace";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHIFT BKSP>, <&kp BKSP>
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,7 +35,7 @@
             &kp Q           &kp W       &kp F       &kp P       &kp G           &kp J           &kp L       &kp U       &kp Y       &kp SEMI
             &kp A           &mt LALT R  &mt LGUI S  &mt LCTRL T &kp D           &kp H           &mt LCTRL N &mt LGUI E  &mt LALT I  &kp O 
             &kp Z           &kp X       &kp C       &kp V       &kp B           &kp K           &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                                    &mo LOWER   &mt LSHIFT BKSP &kp SPC         &mo RAISE
+                                                    &mo LOWER   &tdbksp         &kp SPC         &mo RAISE
             >;
         };
 
@@ -51,16 +62,16 @@
 		     &kp F1      &kp F2    &kp F3    &kp F4  &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
 		     &kp F5      &kp F6    &kp F7    &kp F8  &none      &none        &none        &none        &none        &none 
 		     &kp F9      &kp F10   &kp F11   &kp F12 &none      &BT_CLR      &none        &none        &none        &tog GAME
-		                            	     &trans  &none      &none       &trans  
+		                            	     &trans  &none      &none        &trans  
 		                           >;
 		                   };	  
 
 		game_layer {
 		                          bindings = <                                 
-		     &kp ESC    &kp Q  &kp W   &kp E   &kp R       &kp I           &kp O       &kp UP      &kp N9    &kp BSPC 
-		     &kp TAB    &kp A  &kp S   &kp D   &kp F       &kp RET         &kp LEFT    &kp DOWN    &kp RIGHT &kp RET 
-		     &kp LCTRL  &kp Z  &kp X   &kp C   &kp V       &kp POUND       &kp N1      &kp N2      &kp N3    &kp tog GAME
-		                               &CAPS   &SPACE      &none           &none  
+		     &kp ESC    &kp Q  &kp W   &kp E      &kp R       &kp I           &kp O       &kp UP      &kp N9    &kp BSPC 
+		     &kp TAB    &kp A  &kp S   &kp D      &kp F       &kp RET         &kp LEFT    &kp DOWN    &kp RIGHT &kp RET 
+		     &kp LCTRL  &kp Z  &kp X   &kp C      &kp V       &kp POUND       &kp N1      &kp N2      &kp N3    &kp tog GAME
+		                               &kp CAPS   &kp SPACE   &none           &none  
 		                           >;
 					
         };
