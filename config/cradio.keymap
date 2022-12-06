@@ -60,15 +60,7 @@
 		                   };	 
 
 						   
-		game_layer {
-		                          bindings = <                                 
-		     &kp ESC    &kp Q  &kp W   &kp E      &kp R       &kp I           &kp O       &kp UP      &kp N9    &kp BSPC 
-		     &kp TAB    &kp A  &kp S   &kp D      &kp F       &kp RET         &kp LEFT    &kp DOWN    &kp RIGHT &kp RET 
-		     &kp LCTRL  &kp Z  &kp X   &kp C      &kp V       &kp POUND       &kp N1      &kp N2      &kp N3    &kp tog 4
-		                               &kp CAPS   &kp SPACE   &none           &none  
-		                           >;
-					
-        };
+
 
 
     };
