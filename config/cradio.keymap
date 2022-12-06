@@ -17,15 +17,7 @@
 
  / {
 
-    behaviors {
-        tdbksp: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_backspace";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&mt LSHIFT BKSP>, <&kp BKSP>
-        };
-    };
+
 
     keymap {
         compatible = "zmk,keymap";
