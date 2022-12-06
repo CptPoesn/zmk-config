@@ -19,11 +19,11 @@
 
 
     behaviors {
-        tdbksp: tap_dance_0 {
+        td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_backspace";
+            label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <175>;
             bindings = <&mt LSHIFT BKSP>, <&kp BKSP>
         };
     };
