@@ -26,7 +26,7 @@
             &kp Q           &kp W       &kp F       &kp P       &kp G           &kp J           &kp L       &kp U       &kp Y       &kp SEMI
             &kp A           &mt LALT R  &mt LGUI S  &mt LCTRL T &kp D           &kp H           &mt LCTRL N &mt LGUI E  &mt LALT I  &kp O 
             &kp Z           &kp X       &kp C       &kp V       &kp B           &kp K           &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                                    &mo LOWER   &&mt LSHIFT BKSP            &kp SPC         &mo RAISE
+                                                    &mo LOWER   &mt LSHIFT BKSP &kp SPC         &mo RAISE
             >;
         };
 
