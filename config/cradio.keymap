@@ -13,19 +13,12 @@
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <175>;
+    quick-tap-ms = <175>;
 };
 
  / {
 
-   behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT BSPC>, <&kp BSPC>;
-        };
-    };
+
 
     keymap {
         compatible = "zmk,keymap";
