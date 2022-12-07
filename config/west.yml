@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: krikun98
+    - name: cobowers
       url-base: https://github.com/cobowers
   projects:
     - name: zmk
       remote: cobowers
-      revision: mouse-ftc 
+      revision: cobowers-mouse-ftc 
       import: app/west.yml
   self:
     path: config
