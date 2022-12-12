@@ -243,7 +243,6 @@
 			layers = <5>;
             bindings = <&kp LALT>;
         };
-    };
 	
         combo_semicolon {
             timeout-ms = <50>;
