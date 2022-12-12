@@ -453,7 +453,7 @@
         combo_plus {
             timeout-ms = <50>;
             key-positions = <10 11 12>;
-			layers = <9>;
+			layers = <10>;
             bindings = <&kp PLUS>;
         };
 				
@@ -462,7 +462,7 @@
         combo_toggle_mouse {
             timeout-ms = <50>;
             key-positions = <1 3 12>;
-			layers = <5>;
+			layers = <5, 10>;
             bindings = <&tog ONEMOUSE>;
         };
 			
@@ -476,7 +476,78 @@
         };
 		
 		
+			
+        combo_toggle_arrows {
+            timeout-ms = <50>;
+            key-positions = <2 11 13>;
+			layers = <5, 12>;
+            bindings = <&tog ONEARR>;
+        };	
 		
+		
+			
+        combo_cmd_grave {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+			layers = <12>;
+            bindings = <&kp LG(GRAVE)>;
+        };	
+		
+			
+        combo_cmd_tab {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+			layers = <12>;
+            bindings = <&kp LG(TAB)>;
+        };	
+		
+			
+        combo_toggle_arrows2 {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+			layers = <12>;
+            bindings = <&tog ONEARR>;
+        };	
+		
+
+			
+        combo_one_shotF {
+            timeout-ms = <50>;
+            key-positions = <2 3 12 13>;
+			layers = <5>;
+            bindings = <&sl ONEF>;
+        };
+		
+		
+		
+        combo_F9 {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+			layers = <13>;
+            bindings = <&tog F9>;
+        };		
+		
+		
+        combo_F10 {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+			layers = <13>;
+            bindings = <&tog F10>;
+        };		
+		
+        combo_F11 {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+			layers = <13>;
+            bindings = <&tog F11>;
+        };		
+		
+        combo_F12 {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+			layers = <13>;
+            bindings = <&tog F12>;
+        };		
 		
     };
 
@@ -533,20 +604,20 @@
 						   
 		one_hand_layer {
 		                          bindings = <                                 
-		     &lt ONEMED O &kp I  &kp E   &lt ONEPAR N  &none        &none        &none    &none    &none &none
-		     &lt ONENUM A &kp R  &kp S   &lt ONEPUNC T &none        &none        &none    &none    &none &none
-		     &none        &none  &none   &none         &tog ONEHAND &none        &none    &none    &none &none
-		                                 &kp BSPC      &kp SPACE    &none        &none  
+		     &lt ONEMED O &kp I  &kp E   &lt ONEPAR N    &none        &none        &none    &none    &none &none
+		     &lt ONENUM A &kp R  &kp S   &lt ONEPUNC T   &none        &none        &none    &none    &none &none
+		     &none        &none  &none   &none           &tog ONEHAND &none        &none    &none    &none &none
+		                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
 
 		one_hand_numbers {
 		                          bindings = <                                 
-		     &none        &kp N4 &kp N5 &kp N6     &none       &none        &none    &none    &none &none
-		     &trans       &kp N1 &kp N2 &kp N3     &none       &none        &none    &none    &none &none
-		     &none        &none  &none  &none      &none       &none        &none    &none    &none &none
-		                                &kp BSPC   &kp SPACE   &none        &none  
+		     &none        &kp N4 &kp N5 &kp N6            &none       &none        &none    &none    &none &none
+		     &trans       &kp N1 &kp N2 &kp N3            &none       &none        &none    &none    &none &none
+		     &none        &none  &none  &none             &none       &none        &none    &none    &none &none
+		                                &mt LSHIFT BSPC   &kp SPACE   &none        &none  
 		                           >;
 					
         };
@@ -554,30 +625,30 @@
 
 		one_hand_parenthesis {
 		                          bindings = <                                 
-		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans     &none       &none        &none    &none    &none &none
-		     &kp RIGHT_BRACE &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none      &none       &none        &none    &none    &none &none
-		     &none           &none             &none                &none      &none       &none        &none    &none    &none &none
-		                                                            &kp BSPC   &kp SPACE   &none        &none  
+		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans          &none       &none        &none    &none    &none &none
+		     &kp RIGHT_BRACE &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none           &none       &none        &none    &none    &none &none
+		     &none           &none             &none                &none           &none       &none        &none    &none    &none &none
+		                                                            &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
         };
 
 		one_hand_media {
 		                          bindings = <                                 
-		     &trans    &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &none       &none        &none    &none    &none &none
-		     &none     &kp LG(X)     &kp LG(C)      &kp LG(V)    &none       &none        &none    &none    &none &none
-		     &none     &none         &none          &none        &none       &none        &none    &none    &none &none
-		                                                         &kp BSPC    &kp SPACE   &none        &none  
+		     &trans    &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &none           &none        &none    &none    &none &none
+		     &none     &kp LG(X)     &kp LG(C)      &kp LG(V)    &none           &none        &none    &none    &none &none
+		     &none     &none         &none          &none        &none           &none        &none    &none    &none &none
+		                                                         &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
         };
 
 		one_hand_punctuation {
 		                          bindings = <                                 
-		     &kp DOLLAR &kp ASTERISK  &kp UNDERSCORE &none        &none       &none        &none    &none    &none &none
-		     &kp HASH   &kp EQUAL     &kp MINUS      &trans       &none       &none        &none    &none    &none &none
-		     &none      &none         &none          &none        &none       &none        &none    &none    &none &none
-		                                                          &kp BSPC    &kp SPACE   &none        &none  
+		     &kp DOLLAR &kp ASTERISK  &kp UNDERSCORE &none        &none           &none        &none    &none    &none &none
+		     &kp HASH   &kp EQUAL     &kp MINUS      &trans       &none           &none        &none    &none    &none &none
+		     &none      &none         &none          &none        &none           &none        &none    &none    &none &none
+		                                                          &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
         };
@@ -587,7 +658,7 @@
 		     &tog ONEMOUSE &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none       &none        &none    &none    &none &none
 		     &mo ONESCROL  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none       &none        &none    &none    &none &none
 		     &none         &none          &none          &none           &none       &none        &none    &none    &none &none
-		                                                 &kp BSPC        &kp SPACE   &none        &none  
+		                                                 &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
         };
@@ -597,11 +668,33 @@
 		     &tog ONEMOUSE &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK         &none       &none        &none    &none    &none &none
 		     &mo ONESCROL  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &none       &none        &none    &none    &none &none
 		     &none         &none            &none            &none             &none       &none        &none    &none    &none &none
-		                                                     &kp BSPC          &kp SPACE   &none        &none  
+		                                                     &mt LSHIFT BSPC   &kp SPACE   &none        &none  
 		                           >;
 					
         };
 		
+		
+		
+		one_hand_arrows {
+		                          bindings = <                                 
+		     &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)   &none       &none        &none    &none    &none &none
+		     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT       &none       &none        &none    &none    &none &none
+		     &none         &none          &none          &none           &none       &none        &none    &none    &none &none
+		                                                 &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		                           >;
+					
+        };
+		
+		
+		one_hand_fkeys {
+		                          bindings = <                                 
+		     &kp F1   &kp F2    &kp F3      &kp F4          &none       &none        &none    &none    &none &none
+		     &kp F5   &kp F6    &kp F7      &kp F8          &none       &none        &none    &none    &none &none
+		     &none    &none     &none       &none           &none       &none        &none    &none    &none &none
+		                                    &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		                           >;
+					
+        };
 		
     };
 };
