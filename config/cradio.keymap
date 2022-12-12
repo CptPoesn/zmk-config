@@ -480,7 +480,7 @@
         combo_toggle_arrows {
             timeout-ms = <50>;
             key-positions = <2 11 13>;
-			layers = <5, 12>;
+			layers = <5 12>;
             bindings = <&tog ONEARR>;
         };	
 		
