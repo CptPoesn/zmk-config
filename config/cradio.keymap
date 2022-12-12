@@ -304,7 +304,7 @@
             timeout-ms = <50>;
             key-positions = <2 12>;
 			layers = <5>;
-            bindings = <&kt LGUI>;
+            bindings = <&kt LSHIFT>;
         };
 
     };
