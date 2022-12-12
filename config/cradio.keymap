@@ -446,7 +446,7 @@
 						   
 		one_hand_layer {
 		                          bindings = <                                 
-		     &kp O        &kp I  &kp E   &lt ONEPAR N  a&none       &none        &none    &none    &none &none
+		     &kp O        &kp I  &kp E   &lt ONEPAR N  &none       &none        &none    &none    &none &none
 		     &lt ONENUM A &kp R  &kp S   &kp T         &none       &none        &none    &none    &none &none
 		     &none        &none  &none   &none         &none       &none        &none    &none    &none &none
 		                                 &tog ONEHAND  &kp SPACE   &none        &none  
