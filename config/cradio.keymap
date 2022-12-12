@@ -172,6 +172,142 @@
 		
 		
 		
+		
+		
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <3 12>;
+			layers = <5>;
+            bindings = <&kp COMMA>;
+        };
+		
+        combo_period {
+            timeout-ms = <50>;
+            key-positions = <3 11>;
+			layers = <5>;
+            bindings = <&kp PERIOD>;
+        };
+		
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <3 10>;
+			layers = <5>;
+            bindings = <&kp SLASH>;
+        };
+		
+        combo_single_quote {
+            timeout-ms = <50>;
+            key-positions = <3 11 12>;
+			layers = <5>;
+            bindings = <&kp SINGLE_QUOTE>;
+        };
+		
+        combo_ESC {
+            timeout-ms = <50>;
+            key-positions = <2 3 10>;
+			layers = <5>;
+            bindings = <&kp ESC>;
+        };
+		
+        combo_TAB {
+            timeout-ms = <50>;
+            key-positions = <1 2 3 10>;
+			layers = <5>;
+            bindings = <&kp TAB>;
+        };
+		
+        combo_BkSpc {
+            timeout-ms = <50>;
+            key-positions = <2 13>;
+			layers = <5>;
+            bindings = <&kp BSPC>;
+        };
+		
+        combo_CTRL {
+            timeout-ms = <50>;
+            key-positions = <0 13>;
+			layers = <5>;
+            bindings = <&sk LCTRL>;
+        };
+		
+        combo_GUI {
+            timeout-ms = <50>;
+            key-positions = <0 12>;
+			layers = <5>;
+            bindings = <&sk LGUI>;
+        };
+		
+        combo_alt {
+            timeout-ms = <50>;
+            key-positions = <0 11>;
+			layers = <5>;
+            bindings = <&sk LALT>;
+        };
+    };
+	
+        combo_semicolon {
+            timeout-ms = <50>;
+            key-positions = <1 10>;
+			layers = <5>;
+            bindings = <&kp SEMICOLON>;
+        };
+		
+        combo_colon {
+            timeout-ms = <50>;
+            key-positions = <2 10>;
+			layers = <5>;
+            bindings = <&kp COLON>;
+        };
+		
+        combo_question {
+            timeout-ms = <50>;
+            key-positions = <1 3 10>;
+			layers = <5>;
+            bindings = <&kp QUESTION>;
+        };
+		
+        combo_double_quote {
+            timeout-ms = <50>;
+            key-positions = <3 12 13>;
+			layers = <5>;
+            bindings = <&kp DOUBLE_QUOTES>;
+        };
+		
+        combo_EXCLAMATION {
+            timeout-ms = <50>;
+            key-positions = <1 12>;
+			layers = <5>;
+            bindings = <&kp EXCLAMATION>;
+        };
+		
+        combo_TAB {
+            timeout-ms = <50>;
+            key-positions = <1 2 3 10>;
+			layers = <5>;
+            bindings = <&kp TAB>;
+        };
+		
+        combo_ENTER {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+			layers = <5>;
+            bindings = <&kp ENTER>;
+        };
+		
+        combo_SHIFT {
+            timeout-ms = <50>;
+            key-positions = <0 1 2 13>;
+			layers = <5>;
+            bindings = <&sk LSHIFT>;
+        };
+		
+        combo_lock_SHIFT {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+			layers = <5>;
+            bindings = <&sk LGUI>;
+        };
+
     };
 
 
