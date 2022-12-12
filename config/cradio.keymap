@@ -516,7 +516,7 @@
 		                          bindings = <                                 
 		     &lt ONEMED O &kp I  &kp E   &lt ONEPAR N  &none        &none        &none    &none    &none &none
 		     &lt ONENUM A &kp R  &kp S   &lt ONEPUNC T &none        &none        &none    &none    &none &none
-		     &none        &none  &none   &none         &TOG ONEHAND &none        &none    &none    &none &none
+		     &none        &none  &none   &none         &tog ONEHAND &none        &none    &none    &none &none
 		                                 &kp BSPC      &kp SPACE    &none        &none  
 		                           >;
 					
