@@ -313,7 +313,7 @@
             timeout-ms = <50>;
             key-positions = <1 11>;
 			layers = <5>;
-            bindings = <&kp LALT(U)>;
+            bindings = <&kp LA(U)>;
         };
 		
 		
@@ -426,7 +426,7 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
 			layers = <8>;
-            bindings = <&kp LGUI(Z)>;
+            bindings = <&kp LG(Z)>;
         };
 		
 			
