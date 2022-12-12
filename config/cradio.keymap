@@ -4,12 +4,19 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define ADJUST  3
-#define GAME    4
-#define ONEHAND 5
+#define DEFAULT  0
+#define LOWER    1
+#define RAISE    2
+#define ADJUST   3
+#define GAME     4
+#define ONEHAND  5
+#define ONENUM   6
+#define ONEPAR   7
+#define ONEMED   8
+#define ONEPUNC  9
+#define ONEMOUSE 10
+#define ONEARR   11
+#define ONEF     12
 
 &mt {
     flavor = "tap-preferred";
@@ -22,10 +29,16 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_tog_one_hand {
             timeout-ms = <50>;
             key-positions = <10 11 12 13>;
 			layers = <1>;
+            bindings = <&tog ONEHAND>;
+        };
+        combo_space {
+            timeout-ms = <50>;
+            key-positions = <10 11 12 13>;
+			layers = <5>;
             bindings = <&tog ONEHAND>;
         };
     };
