@@ -41,14 +41,14 @@
             timeout-ms = <50>;
             key-positions = <10 11 12 13>;
 			layers = <5>;
-            bindings = <&k SPC>;
+            bindings = <&kp SPC>;
         };
 		
         combo_f {
             timeout-ms = <50>;
             key-positions = <2 3>;
 			layers = <5>;
-            bindings = <&k F>;
+            bindings = <&kp F>;
         };
 		
     };
