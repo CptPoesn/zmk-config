@@ -347,7 +347,7 @@
         combo_numcomma {
             timeout-ms = <50>;
             key-positions = <12 13>;
-			layers = <5>;
+			layers = <6>;
             bindings = <&kp COMMA>;
         };
 		
