@@ -9,6 +9,7 @@
 #define RAISE   2
 #define ADJUST  3
 #define GAME    4
+#define ONEHAND 5
 
 &mt {
     flavor = "tap-preferred";
@@ -23,8 +24,8 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 10>;
-            bindings = <&kp ESC>;
+            key-positions = <10 11 12 13>;
+            bindings = <&tog ONEHAND>;
         };
     };
 
@@ -79,6 +80,15 @@
 					
         };
 						   
+		one_hand_layer {
+		                          bindings = <                                 
+		     &kp O        &kp I  &kp E   &kp N      &none       &none        &none    &none    &none &none
+		     &kp A        &kp R  &kp S   &kp T      &none       &none        &none    &none    &none &none
+		     &tog ONEHAND &none  &none   &none      &none       &none        &none    &none    &none &none
+		                               &none      &kp SPACE   &none        &none  
+		                           >;
+					
+        };
 
 
 
