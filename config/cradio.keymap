@@ -555,10 +555,10 @@
 
 		one_hand_punctuation {
 		                          bindings = <                                 
-		     &DOLLAR   &kp ASTERISK  &kp ASTERISK   &none        &none       &none        &none    &none    &none &none
-		     &HASH     &kp EQUAL     &kp MINUS      &trans       &none       &none        &none    &none    &none &none
-		     &none     &none         &none          &none        &none       &none        &none    &none    &none &none
-		                                                         &none       &kp SPACE   &none        &none  
+		     &kp DOLLAR &kp ASTERISK  &kp UNDERSCORE &none        &none       &none        &none    &none    &none &none
+		     &kp HASH   &kp EQUAL     &kp MINUS      &trans       &none       &none        &none    &none    &none &none
+		     &none      &none         &none          &none        &none       &none        &none    &none    &none &none
+		                                                          &none       &kp SPACE   &none        &none  
 		                           >;
 					
         };
