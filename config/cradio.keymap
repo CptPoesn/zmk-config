@@ -352,6 +352,44 @@
         };
 		
 		
+		
+		
+        combo_less {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+			layers = <7>;
+            bindings = <&kp LESS_THAN>;
+        };
+		
+        combo_greater {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+			layers = <7>;
+            bindings = <&kp GREATER_THAN>;
+        };
+		
+        combo_numcomma {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+			layers = <7>;
+            bindings = <&kp TILDE>;
+        };
+		
+        combo_circ {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+			layers = <7>;
+            bindings = <&kp CARET>;
+        };
+		
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <0 1 2>;
+			layers = <7>;
+            bindings = <&kp GRAVE>;
+        };
+		
+		
 
     };
 
@@ -408,7 +446,7 @@
 						   
 		one_hand_layer {
 		                          bindings = <                                 
-		     &kp O        &kp I  &kp E   &kp N         &none       &none        &none    &none    &none &none
+		     &kp O        &kp I  &kp E   &lt ONEPAR N  a&none       &none        &none    &none    &none &none
 		     &lt ONENUM A &kp R  &kp S   &kp T         &none       &none        &none    &none    &none &none
 		     &none        &none  &none   &none         &none       &none        &none    &none    &none &none
 		                                 &tog ONEHAND  &kp SPACE   &none        &none  
@@ -418,14 +456,24 @@
 
 		one_hand_numbers {
 		                          bindings = <                                 
-		     &none        &kp N4 &kp N5  &kp N6     &none       &none        &none    &none    &none &none
-		     &trans       &kp N1 &kp N2  &kp N3     &none       &none        &none    &none    &none &none
-		     &none        &none  &none   &none      &none       &none        &none    &none    &none &none
-		                               &none      &kp SPACE   &none        &none  
+		     &none        &kp N4 &kp N5 &kp N6     &none       &none        &none    &none    &none &none
+		     &trans       &kp N1 &kp N2 &kp N3     &none       &none        &none    &none    &none &none
+		     &none        &none  &none  &none      &none       &none        &none    &none    &none &none
+		                                &none      &kp SPACE   &none        &none  
 		                           >;
 					
         };
 
+
+		one_hand_parenthesis {
+		                          bindings = <                                 
+		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans     &none       &none        &none    &none    &none &none
+		     &kp RIGHT_BRACE &kpLEFT_BRACKET   &kp RIGHT_BRACKET    &none      &none       &none        &none    &none    &none &none
+		     &none           &none             &none                &none      &none       &none        &none    &none    &none &none
+		                                                            &none      &kp SPACE   &none        &none  
+		                           >;
+					
+        };
 
     };
 };
