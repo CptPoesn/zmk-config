@@ -306,6 +306,52 @@
 			layers = <5>;
             bindings = <&kt LSHIFT>;
         };
+		
+		
+		
+        combo_zero {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+			layers = <6>;
+            bindings = <&kp N0>;
+        };
+		
+        combo_seven {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+			layers = <6>;
+            bindings = <&kp N7>;
+        };
+		
+        combo_eight {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+			layers = <6>;
+            bindings = <&kp N8>;
+        };
+		
+        combo_nine {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+			layers = <6>;
+            bindings = <&kp N9>;
+        };
+		
+        combo_numdot {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>;
+			layers = <6>;
+            bindings = <&kp DOT>;
+        };
+		
+        combo_numcomma {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+			layers = <5>;
+            bindings = <&kp comma>;
+        };
+		
+		
 
     };
 
@@ -362,14 +408,23 @@
 						   
 		one_hand_layer {
 		                          bindings = <                                 
-		     &kp O        &kp I  &kp E   &kp N      &none       &none        &none    &none    &none &none
-		     &kp A        &kp R  &kp S   &kp T      &none       &none        &none    &none    &none &none
-		     &tog ONEHAND &none  &none   &none      &none       &none        &none    &none    &none &none
-		                               &none      &kp SPACE   &none        &none  
+		     &kp O        &kp I  &kp E   &kp N         &none       &none        &none    &none    &none &none
+		     &lt ONENUM A &kp R  &kp S   &kp T         &none       &none        &none    &none    &none &none
+		     &none        &none  &none   &none         &none       &none        &none    &none    &none &none
+		                                 &tog ONEHAND  &kp SPACE   &none        &none  
 		                           >;
 					
         };
 
+		one_hand_numbers {
+		                          bindings = <                                 
+		     &none        &kp N4 &kp N5  &kp N6     &none       &none        &none    &none    &none &none
+		     &trans       &kp N1 &kp N2  &kp N3     &none       &none        &none    &none    &none &none
+		     &none        &none  &none   &none      &none       &none        &none    &none    &none &none
+		                               &none      &kp SPACE   &none        &none  
+		                           >;
+					
+        };
 
 
     };
