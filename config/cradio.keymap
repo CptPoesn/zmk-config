@@ -19,7 +19,6 @@
  / {
 
 
-/ {
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -28,7 +27,6 @@
             bindings = <&kp ESC>;
         };
     };
-};
 
 
     keymap {
