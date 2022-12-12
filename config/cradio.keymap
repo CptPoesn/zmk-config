@@ -227,21 +227,21 @@
             timeout-ms = <50>;
             key-positions = <0 13>;
 			layers = <5>;
-            bindings = <&sk LCTRL>;
+            bindings = <&kp LCTRL>;
         };
 		
         combo_GUI {
             timeout-ms = <50>;
             key-positions = <0 12>;
 			layers = <5>;
-            bindings = <&sk LGUI>;
+            bindings = <&kp LGUI>;
         };
 		
         combo_alt {
             timeout-ms = <50>;
             key-positions = <0 11>;
 			layers = <5>;
-            bindings = <&sk LALT>;
+            bindings = <&kp LALT>;
         };
     };
 	
@@ -298,14 +298,14 @@
             timeout-ms = <50>;
             key-positions = <0 1 2 13>;
 			layers = <5>;
-            bindings = <&sk LSHIFT>;
+            bindings = <&kp LSHIFT>;
         };
 		
         combo_lock_SHIFT {
             timeout-ms = <50>;
             key-positions = <2 12>;
 			layers = <5>;
-            bindings = <&sk LGUI>;
+            bindings = <&kp LGUI>;
         };
 
     };
