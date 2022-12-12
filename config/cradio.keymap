@@ -348,7 +348,7 @@
             timeout-ms = <50>;
             key-positions = <1 2 3>;
 			layers = <5>;
-            bindings = <&kp comma>;
+            bindings = <&kp COMMA>;
         };
 		
 		
