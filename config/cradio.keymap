@@ -473,7 +473,7 @@
 		one_hand_layer {
 		                          bindings = <                                 
 		     &lt ONEMED O &kp I  &kp E   &lt ONEPAR N  &none       &none        &none    &none    &none &none
-		     &lt ONENUM A &kp R  &kp S   &kp T         &none     223  &none        &none    &none    &none &none
+		     &lt ONENUM A &kp R  &kp S   &kp T         &none       &none        &none    &none    &none &none
 		     &none        &none  &none   &none         &none       &none        &none    &none    &none &none
 		                                 &tog ONEHAND  &kp SPACE   &none        &none  
 		                           >;
@@ -501,6 +501,16 @@
 					
         };
 
+		one_hand_media {
+		                          bindings = <                                 
+		     &trans    &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &none       &none        &none    &none    &none &none
+		     &none     &kp LG(X)     &kp LG(C)      &kp LG(V)    &none       &none        &none    &none    &none &none
+		     &none     &none         &none          &none        &none       &none        &none    &none    &none &none
+		                                                         &none       &kp SPACE   &none        &none  
+		                           >;
+					
+        };
+		
 		
     };
 };
