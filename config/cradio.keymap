@@ -614,10 +614,10 @@
 
 		one_hand_numbers {
 		                          bindings = <                                 
-		     &none        &kp N4 &kp N5 &kp N6            &none       &none        &none    &none    &none &none
-		     &trans       &kp N1 &kp N2 &kp N3            &none       &none        &none    &none    &none &none
-		     &none        &none  &none  &none             &none       &none        &none    &none    &none &none
-		                                &mt LSHIFT BSPC   &kp SPACE   &none        &none  
+		     &none        &kp N4 &kp N5 &kp N6            &none        &none        &none    &none    &none &none
+		     &trans       &kp N1 &kp N2 &kp N3            &none        &none        &none    &none    &none &none
+		     &none        &none  &none  &none             &tog ONEHAND &none        &none    &none    &none &none
+		                                &mt LSHIFT BSPC   &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -627,7 +627,7 @@
 		                          bindings = <                                 
 		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans          &none       &none        &none    &none    &none &none
 		     &kp RIGHT_BRACE &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none           &none       &none        &none    &none    &none &none
-		     &none           &none             &none                &none           &none       &none        &none    &none    &none &none
+		     &none           &none             &none                &tog ONEHAND    &none       &none        &none    &none    &none &none
 		                                                            &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
@@ -637,7 +637,7 @@
 		                          bindings = <                                 
 		     &trans    &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &none           &none        &none    &none    &none &none
 		     &none     &kp LG(X)     &kp LG(C)      &kp LG(V)    &none           &none        &none    &none    &none &none
-		     &none     &none         &none          &none        &none           &none        &none    &none    &none &none
+		     &none     &none         &none          &none        &tog ONEHAND    &none        &none    &none    &none &none
 		                                                         &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
@@ -647,7 +647,7 @@
 		                          bindings = <                                 
 		     &kp DOLLAR &kp ASTERISK  &kp UNDERSCORE &none        &none           &none        &none    &none    &none &none
 		     &kp HASH   &kp EQUAL     &kp MINUS      &trans       &none           &none        &none    &none    &none &none
-		     &none      &none         &none          &none        &none           &none        &none    &none    &none &none
+		     &none      &none         &none          &none        &tog ONEHAND    &none        &none    &none    &none &none
 		                                                          &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
@@ -655,20 +655,20 @@
 		
 		one_hand_mouse {
 		                          bindings = <                                 
-		     &tog ONEMOUSE &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none       &none        &none    &none    &none &none
-		     &mo ONESCROL  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none       &none        &none    &none    &none &none
-		     &none         &none          &none          &none           &none       &none        &none    &none    &none &none
-		                                                 &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &tog ONEMOUSE &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none        &none        &none    &none    &none &none
+		     &mo ONESCROL  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none        &none        &none    &none    &none &none
+		     &none         &none          &none          &none           &tog ONEHAND &none        &none    &none    &none &none
+		                                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
 		
 		one_hand_scroll {
 		                          bindings = <                                 
-		     &tog ONEMOUSE &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK         &none       &none        &none    &none    &none &none
-		     &mo ONESCROL  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &none       &none        &none    &none    &none &none
-		     &none         &none            &none            &none             &none       &none        &none    &none    &none &none
-		                                                     &mt LSHIFT BSPC   &kp SPACE   &none        &none  
+		     &tog ONEMOUSE &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK         &none        &none        &none    &none    &none &none
+		     &mo ONESCROL  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &none        &none        &none    &none    &none &none
+		     &none         &none            &none            &none             &tog ONEHAND &none        &none    &none    &none &none
+		                                                     &mt LSHIFT BSPC   &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -677,10 +677,10 @@
 		
 		one_hand_arrows {
 		                          bindings = <                                 
-		     &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)   &none       &none        &none    &none    &none &none
-		     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT       &none       &none        &none    &none    &none &none
-		     &none         &none          &none          &none           &none       &none        &none    &none    &none &none
-		                                                 &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)   &none        &none        &none    &none    &none &none
+		     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &none         &none          &none          &none           &tog ONEHAND &none        &none    &none    &none &none
+		                                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -688,10 +688,10 @@
 		
 		one_hand_fkeys {
 		                          bindings = <                                 
-		     &kp F1   &kp F2    &kp F3      &kp F4          &none       &none        &none    &none    &none &none
-		     &kp F5   &kp F6    &kp F7      &kp F8          &none       &none        &none    &none    &none &none
-		     &none    &none     &none       &none           &none       &none        &none    &none    &none &none
-		                                    &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &kp F1   &kp F2    &kp F3      &kp F4          &none        &none        &none    &none    &none &none
+		     &kp F5   &kp F6    &kp F7      &kp F8          &none        &none        &none    &none    &none &none
+		     &none    &none     &none       &none           &tog ONEHAND &none        &none    &none    &none &none
+		                                    &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
