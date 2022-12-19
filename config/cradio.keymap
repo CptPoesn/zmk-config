@@ -468,7 +468,7 @@
         combo_plus {
             timeout-ms = <50>;
             key-positions = <10 11 12>;
-			layers = <10>;
+			layers = <9>;
             bindings = <&kp PLUS>;
         };
 				
