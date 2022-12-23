@@ -18,6 +18,7 @@
 #define ONESCROL 11
 #define ONEARR   12
 #define ONEF     13
+#define ONEFUN   14
 
 &mt {
     flavor = "tap-preferred";
@@ -539,7 +540,7 @@
             timeout-ms = <50>;
             key-positions = <0 10>;
 			layers = <13>;
-            bindings = <&tog F9>;
+            bindings = <&kp F9>;
         };		
 		
 		
@@ -547,22 +548,30 @@
             timeout-ms = <50>;
             key-positions = <1 11>;
 			layers = <13>;
-            bindings = <&tog F10>;
+            bindings = <&kp F10>;
         };		
 		
         combo_F11 {
             timeout-ms = <50>;
             key-positions = <2 12>;
 			layers = <13>;
-            bindings = <&tog F11>;
+            bindings = <&kp F11>;
         };		
 		
         combo_F12 {
             timeout-ms = <50>;
             key-positions = <3 13>;
 			layers = <13>;
-            bindings = <&tog F12>;
-        };		
+            bindings = <&kp F12>;
+        };	
+		
+		
+		combo_toggle_fun_layer {
+            timeout-ms = <50>;
+            key-positions = <0 1 10 11>;
+			layers = <5>;
+            bindings = <&tog ONEFUN>;
+		};
 		
     };
 
@@ -710,6 +719,18 @@
 		                           >;
 					
         };
+		
+		
+		one_hand_fun_media {
+		                          bindings = <                                 
+		     &kp ESC  &kp UP    &kp LEFT    &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &kp F    &kp DOWN  &kp RET     &kp SPACE       &none        &none        &none    &none    &none &none
+		     &none    &none     &none       &none           &tog ONEHAND &none        &none    &none    &none &none
+		                                    &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		                           >;
+					
+        };
+		
 		
     };
 };
