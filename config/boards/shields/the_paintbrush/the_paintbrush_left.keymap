@@ -713,7 +713,7 @@
 		scroll {
 				                          bindings = <                                 
 				     &none         &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK
-				     &mo ONESCROL  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT
+				     &mo SCROLL    &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT
 				                           >;
 					
 		        };
