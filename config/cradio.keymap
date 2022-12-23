@@ -569,7 +569,7 @@
 		combo_toggle_fun_layer {
             timeout-ms = <50>;
             key-positions = <0 1 10 11>;
-			layers = <5>;
+			layers = <ONEHAND ONEFUN>;
             bindings = <&tog ONEFUN>;
 		};
 		
