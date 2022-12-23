@@ -49,6 +49,8 @@
     quick-tap-ms = <175>;
 };
 
+ / {
+
         combo_return_to_base {
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_I KEY_E KEY_N KEY_A KEY_R KEY_S KEY_T>;
