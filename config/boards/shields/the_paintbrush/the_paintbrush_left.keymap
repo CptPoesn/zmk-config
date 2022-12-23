@@ -157,7 +157,7 @@
 		
         combo_k {
             timeout-ms = <50>;
-            key-positions = <1KEY_A KEY_S>;
+            key-positions = <KEY_A KEY_S>;
 			layers = <DEFAULT>;
             bindings = <&kp K>;
         };
