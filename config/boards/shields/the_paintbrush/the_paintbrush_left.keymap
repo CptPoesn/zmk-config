@@ -50,6 +50,10 @@
 };
 
  / {
+    combos {
+        compatible = "zmk,combos";
+
+
 
         combo_return_to_base {
             timeout-ms = <50>;
