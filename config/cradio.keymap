@@ -483,12 +483,7 @@
 			
 			
 			
-        combo_middle_click {
-            timeout-ms = <50>;
-            key-positions = <11 13>;
-			layers = <9>;
-            bindings = <&mkp MCLK>;
-        };
+
 		
 		
 			
