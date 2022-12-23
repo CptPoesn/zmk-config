@@ -686,7 +686,7 @@
 		media {
 		                          bindings = <                                 
 		     &trans    &kp LGUI        &kp TAB        &kp C_VOL_UP
-		     &none     &mt LG(C) LG(V) &kp GRAVE      &mt C_VOL_DOWN C_MUTE
+		     &none     &kp LG(C)       &kp GRAVE      &kp C_VOL_DOWN
 		                           >;
 					
         };
