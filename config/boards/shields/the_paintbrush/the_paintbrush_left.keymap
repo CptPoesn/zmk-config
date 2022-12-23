@@ -643,7 +643,7 @@
 		
 		combo_toggle_bluetooth_layer {
             timeout-ms = <50>;
-            key-positions = <KEY_I KEY_N KEY_A KEY_S>;
+            key-positions = <KEY_O KEY_I KEY_E KEY_A KEY_R KEY_S>;
 			layers = <DEFAULT BLUETOOTH>;
             bindings = <&tog BLUETOOTH>;
 		};
@@ -741,6 +741,14 @@
 				                          bindings = <                                 
 				     &kp ESC  &kp UP    &kp LEFT    &kp RIGHT
 				     &kp F    &kp DOWN  &kp RET     &kp SPACE
+				                           >;
+					
+		        };
+			
+		bluetooth {
+				                          bindings = <                                 
+				     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+				     &bt BT_CLR   &none        &none        &bootloader
 				                           >;
 					
 		        };
