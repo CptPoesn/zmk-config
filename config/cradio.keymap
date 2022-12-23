@@ -573,6 +573,34 @@
             bindings = <&tog ONEFUN>;
 		};
 		
+		combo_fun_next_tab {
+            timeout-ms = <50>;
+            key-positions = <3 13>;
+			layers = <ONEFUN>;
+            bindings = <&kp LC(TAB)>;
+		};
+		
+		combo_fun_last_tab {
+            timeout-ms = <50>;
+            key-positions = <2 12>;
+			layers = <ONEFUN>;
+            bindings = <&kp LS(LC(TAB))>;
+		};
+		
+		combo_fun_close_tab {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+			layers = <ONEFUN>;
+            bindings = <&kp LG(W)>;
+		};
+		
+		combo_fun_toggle_out {
+            timeout-ms = <50>;
+            key-positions = <0 10>;
+			layers = <ONEFUN>;
+            bindings = <&tog ONEFUN>;
+		};
+		
     };
 
 
