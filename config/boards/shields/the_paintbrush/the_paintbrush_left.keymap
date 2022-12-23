@@ -630,7 +630,7 @@
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_A>;
 			layers = <FUNTIME>;
-            bindings = <&tog ONEFUN>;
+            bindings = <&tog FUNTIME>;
 		};
 		
 		
