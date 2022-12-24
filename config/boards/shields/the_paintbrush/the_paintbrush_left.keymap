@@ -54,12 +54,12 @@
  / {
  
     behaviors {
-		td_mute_pause: td_mute_pause{
+		td_volume_mute: td_volume_mute{
 	        compatible = "zmk,behavior-tap-dance";
-		    label = "td_mute_pause";
+		    label = "td_volume_mute";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&kp C_MUTE>, <&kp C_PLAY_PAUSE>;
+		    bindings = <&kp C_VOLUME_DOWN>, <&kp C_MUTE>;
 		};
 		
 		td_copy_paste: td_copy_paste{
@@ -717,7 +717,7 @@
 		media {
 		                          bindings = <                                 
 		     &trans    &kp LGUI        &kp TAB        &kp C_VOL_UP
-		     &none     &td_copy_paste  &kp GRAVE      &td_mute_pause
+		     &none     &td_copy_paste  &kp GRAVE      &td_volume_mute
 		                           >;
 					
         };
