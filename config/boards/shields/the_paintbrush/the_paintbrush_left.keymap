@@ -51,27 +51,8 @@
 
 
 
- / {
+ / { 
  
-    behaviors {
-		td_volume_mute: td_volume_mute{
-	        compatible = "zmk,behavior-tap-dance";
-		    label = "td_volume_mute";
-		    #binding-cells = <0>;
-		    tapping-term-ms = <200>;
-		    bindings = <&kp C_VOLUME_DOWN>, <&kp C_MUTE>;
-		};
-		
-		td_copy_paste: td_copy_paste{
-	        compatible = "zmk,behavior-tap-dance";
-		    label = "td_copy_paste";
-		    #binding-cells = <0>;
-		    tapping-term-ms = <200>;
-		    bindings = <&kp LG(C)>, <&kp LG(V)>;
-		};
-    };
-	
-	
  
  
  
@@ -717,7 +698,7 @@
 		media {
 		                          bindings = <                                 
 		     &trans    &kp LGUI        &kp TAB        &kp C_VOL_UP
-		     &none     &td_copy_paste  &kp GRAVE      &td_volume_mute
+		     &kp LG(V) &kp LG(C)       &kp GRAVE      &kp C_VOLUME_DOWN
 		                           >;
 					
         };
