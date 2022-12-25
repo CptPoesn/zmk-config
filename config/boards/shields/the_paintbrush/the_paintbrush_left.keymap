@@ -17,7 +17,7 @@
 #define MEDIA          3
 #define PUNCTUATION    4
 #define MOUSE          5
-#define SCROLL         6
+#define SCROLLLAYER    6
 #define ARROW          7
 #define FKEYS          8
 #define FUNTIME        9
@@ -550,7 +550,7 @@
         combo_middle_click {
             timeout-ms = <50>;
             key-positions = <KEY_I KEY_N>;
-			layers = <MOUSE SCROLL>;
+			layers = <MOUSE SCROLLLAYER>;
             bindings = <&mkp MCLK>;
         };
 		
@@ -723,13 +723,13 @@
 		
 		mouse {
 				                          bindings = <                                 
-		     &tog MOUSE &mkp RCLK      &mmv MOVE_UP   &mkp LCLK 
-                     &mo SCROLL &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT
+		     &tog MOUSE      &mkp RCLK      &mmv MOVE_UP   &mkp LCLK 
+                     &mo SCROLLLAYER &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT
 				                           >;
 					
 		        };
 		
-		scroll {
+		scrolllayer {
 				                          bindings = <                                 
 				     &none         &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK
 				     &mo SCROLL    &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT
