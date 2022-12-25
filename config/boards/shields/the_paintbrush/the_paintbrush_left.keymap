@@ -382,6 +382,7 @@
             key-positions = <KEY_1 KEY_4>;
 			layers = <NUM>;
             bindings = <&kp N5>;
+	};
 
 		
         combo_six {
