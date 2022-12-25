@@ -731,8 +731,8 @@
 		
 		scrolllayer {
 				                          bindings = <                                 
-				     &none         &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK
-				     &mo SCROLL    &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT
+				     &none            &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK
+				     &mo SCROLLLAYER  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT
 				                           >;
 					
 		        };
