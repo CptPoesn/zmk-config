@@ -40,7 +40,7 @@
 #define KEY_1 5
 #define KEY_2 6
 #define KEY_4 7
-#define KEY_8 2
+#define KEY_8 1
 
 
 &mt {
@@ -376,6 +376,13 @@
 			layers = <NUM>;
             bindings = <&kp N3>;
         };
+	
+	combo_five {
+            timeout-ms = <50>;
+            key-positions = <KEY_1 KEY_4>;
+			layers = <NUM>;
+            bindings = <&kp N5>;
+
 		
         combo_six {
             timeout-ms = <50>;
