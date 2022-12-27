@@ -22,6 +22,8 @@
 #define FKEYS          8
 #define FUNTIME        9
 #define BLUETOOTH      10
+#define VAMPIRE        11
+#define LAYERS         12
 
 // Left/Right
 #define ARTSEY_LEFT 1
@@ -65,6 +67,12 @@
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_I KEY_E KEY_N KEY_A KEY_R KEY_S KEY_T>;
             bindings = <&to DEFAULT>;
+        };
+		
+        combo_to_layer_select {
+            timeout-ms = <50>;
+            key-positions = <KEY_I KEY_E KEY_N KEY_R KEY_S KEY_T>;
+            bindings = <&to LAYERS>;
         };
 		
         combo_space {
@@ -724,7 +732,7 @@
 		mouse {
 				                          bindings = <                                 
 		     &tog MOUSE      &mkp RCLK      &mmv MOVE_UP   &mkp LCLK 
-                     &mo SCROLLLAYER &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT
+             &mo SCROLLLAYER &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT
 				                           >;
 					
 		        };
@@ -768,6 +776,22 @@
 				                          bindings = <                                 
 				     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
 				     &bt BT_CLR   &none        &none        &bootloader
+				                           >;
+					
+		        };
+				
+		vampire_survivors {
+				                          bindings = <                                 
+				     &kp ESC     &none     &kp UP      &kp ENTER
+				     &to DEFAULT &kp LEFT  &kp DOWN    &kp RIGHT
+				                           >;
+					
+		        };
+		
+		layer_select {
+				                          bindings = <                                 
+				     &to DEFAULT &to FUNTIME &none   &kp ENTER
+				     &to DEFAULT &to VAMPIRE &none   &kp RIGHT
 				                           >;
 					
 		        };
