@@ -616,36 +616,36 @@
 		combo_toggle_fun_layer {
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_I KEY_A KEY_R>;
-			layers = <ONEHAND FUNTIME>;
+			layers = <ONEHAND ONEFUN>;
             bindings = <&tog FUNTIME>;
 		};
 		
 		combo_fun_next_tab {
             timeout-ms = <50>;
             key-positions = <KEY_N KEY_T>;
-			layers = <FUNTIME>;
+			layers = <ONEFUN>;
             bindings = <&kp LC(TAB)>;
 		};
 		
 		combo_fun_last_tab {
             timeout-ms = <50>;
             key-positions = <KEY_E KEY_S>;
-			layers = <FUNTIME>;
+			layers = <ONEFUN>;
             bindings = <&kp LS(LC(TAB))>;
 		};
 		
 		combo_fun_close_tab {
             timeout-ms = <50>;
             key-positions = <KEY_I KEY_R>;
-			layers = <FUNTIME>;
+			layers = <ONEFUN>;
             bindings = <&kp LG(W)>;
 		};
 		
 		combo_fun_toggle_out {
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_A>;
-			layers = <FUNTIME>;
-            bindings = <&tog FUNTIME>;
+			layers = <ONEFUN>;
+            bindings = <&tog ONEFUN>;
 		};
 		
 		
