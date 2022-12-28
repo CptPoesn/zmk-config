@@ -617,7 +617,7 @@
             timeout-ms = <50>;
             key-positions = <KEY_O KEY_I KEY_A KEY_R>;
 			layers = <ONEHAND ONEFUN>;
-            bindings = <&tog FUNTIME>;
+            bindings = <&tog ONEFUN>;
 		};
 		
 		combo_fun_next_tab {
