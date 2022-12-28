@@ -52,7 +52,7 @@
         compatible = "zmk,combos";
         combo_tog_one_hand {
             timeout-ms = <50>;
-            key-positions = <KEY_T 11 12 13>;
+            key-positions = <KEY_A KEY_R KEY_S KEY_T>;
 			layers = <1>;
             bindings = <&tog ONEHAND>;
         };
