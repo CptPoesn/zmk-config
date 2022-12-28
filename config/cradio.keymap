@@ -20,6 +20,24 @@
 #define ONEARR   12
 #define ONEF     13
 #define ONEFUN   14
+#define ONEVAMP  15
+
+
+#define KEY_N 3
+#define KEY_E 2
+#define KEY_I 1
+#define KEY_O 0
+// ARST Row
+#define KEY_T 10
+#define KEY_S 11
+#define KEY_R 12
+#define KEY_A 13
+
+#define KEY_1 12
+#define KEY_2 13
+#define KEY_4 14
+#define KEY_8 1
+
 
 &mt {
     flavor = "tap-preferred";
@@ -34,7 +52,7 @@
         compatible = "zmk,combos";
         combo_tog_one_hand {
             timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
+            key-positions = <KEY_T 11 12 13>;
 			layers = <1>;
             bindings = <&tog ONEHAND>;
         };
@@ -42,134 +60,134 @@
 		
         combo_space {
             timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
-			layers = <5>;
+            key-positions = <KEY_A KEY_R KEY_S KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp SPC>;
         };
 		
         combo_f {
             timeout-ms = <50>;
-            key-positions = <2 3>;
-			layers = <5>;
+            key-positions = <KEY_E KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp F>;
         };
 		
         combo_g {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_E>;
+			layers = <ONEHAND>;
             bindings = <&kp G>;
         };
 		
         combo_j {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_I>;
+			layers = <ONEHAND>;
             bindings = <&kp J>;
         };
 		
         combo_y {
             timeout-ms = <50>;
-            key-positions = <1 3>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp Y>;
         };
 		
         combo_v {
             timeout-ms = <50>;
-            key-positions = <0 2>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_E>;
+			layers = <ONEHAND>;
             bindings = <&kp V>;
         };
 		
         combo_w {
             timeout-ms = <50>;
-            key-positions = <0 3>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp W>;
         };
 		
         combo_d {
             timeout-ms = <50>;
-            key-positions = <1 2 3>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_E KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp D>;
         };
 		
         combo_x {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_I KEY_E>;
+			layers = <ONEHAND>;
             bindings = <&kp X>;
         };
 		
         combo_q {
             timeout-ms = <50>;
-            key-positions = <0 1 3>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_I KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp Q>;
         };
 		
         combo_z {
             timeout-ms = <50>;
-            key-positions = <0 1 2 3>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_I KEY_E KEY_N>;
+			layers = <ONEHAND>;
             bindings = <&kp Z>;
         };
 		
         combo_c {
             timeout-ms = <50>;
-            key-positions = <12 13>;
-			layers = <5>;
+            key-positions = <KEY_S KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp C>;
         };
 		
         combo_u {
             timeout-ms = <50>;
-            key-positions = <11 12>;
-			layers = <5>;
+            key-positions = <KEY_R KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&kp U>;
         };
 		
         combo_h {
             timeout-ms = <50>;
-            key-positions = <11 13>;
-			layers = <5>;
+            key-positions = <KEY_R KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp H>;
         };
 		
         combo_k {
             timeout-ms = <50>;
-            key-positions = <10 12>;
-			layers = <5>;
+            key-positions = <KEY_A KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&kp K>;
         };
 		
         combo_b {
             timeout-ms = <50>;
-            key-positions = <10 13>;
-			layers = <5>;
+            key-positions = <KEY_A KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp B>;
         };
 		
         combo_l {
             timeout-ms = <50>;
-            key-positions = <11 12 13>;
-			layers = <5>;
+            key-positions = <KEY_R KEY_S KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp L>;
         };
 		
         combo_m {
             timeout-ms = <50>;
-            key-positions = <10 11 12>;
-			layers = <5>;
+            key-positions = <KEY_A KEY_R KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&kp M>;
         };
 		
         combo_p {
             timeout-ms = <50>;
-            key-positions = <10 11 13>;
-			layers = <5>;
+            key-positions = <KEY_A KEY_R KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp P>;
         };
 		
@@ -179,187 +197,212 @@
 		
         combo_comma {
             timeout-ms = <50>;
-            key-positions = <3 12>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&kp COMMA>;
         };
 		
         combo_period {
             timeout-ms = <50>;
-            key-positions = <3 11>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_R>;
+			layers = <ONEHAND>;
             bindings = <&kp PERIOD>;
         };
 		
         combo_slash {
             timeout-ms = <50>;
-            key-positions = <3 10>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp SLASH>;
         };
 		
         combo_single_quote {
             timeout-ms = <50>;
-            key-positions = <3 11 12>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_R KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kp SINGLE_QUOTE>;
         };
 		
         combo_ESC {
             timeout-ms = <50>;
-            key-positions = <2 3 10>;
-			layers = <5>;
+            key-positions = <KEY_E KEY_N KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp ESC>;
         };
 		
         combo_TAB {
             timeout-ms = <50>;
-            key-positions = <1 2 3 10>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_E KEY_N KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp TAB>;
-        };
-		
-        combo_BkSpc {
-            timeout-ms = <50>;
-            key-positions = <2 13>;
-			layers = <5>;
-            bindings = <&kp BSPC>;
         };
 		
         combo_CTRL {
             timeout-ms = <50>;
-            key-positions = <0 13>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&sk LCTRL>;
         };
 		
         combo_GUI {
             timeout-ms = <50>;
-            key-positions = <0 12>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&sk LGUI>;
         };
 		
-        combo_alt {
+        combo_ALT {
             timeout-ms = <50>;
-            key-positions = <0 11>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_R>;
+			layers = <ONEHAND>;
             bindings = <&sk LALT>;
         };
 	
         combo_semicolon {
             timeout-ms = <50>;
-            key-positions = <1 10>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp SEMICOLON>;
         };
 		
         combo_colon {
             timeout-ms = <50>;
-            key-positions = <2 10>;
-			layers = <5>;
+            key-positions = <KEY_E KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp COLON>;
         };
 		
         combo_question {
             timeout-ms = <50>;
-            key-positions = <1 3 10>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_N KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp QUESTION>;
         };
 		
         combo_double_quote {
             timeout-ms = <50>;
-            key-positions = <3 10 11>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_A KEY_R>;
+			layers = <ONEHAND>;
             bindings = <&kp DOUBLE_QUOTES>;
         };
 		
         combo_EXCLAMATION {
             timeout-ms = <50>;
-            key-positions = <1 12>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_S>;
+			layers = <ONEHAND>;
             bindings = <&kp EXCLAMATION>;
-        };
-		
-        combo_TAB {
-            timeout-ms = <50>;
-            key-positions = <1 2 3 10>;
-			layers = <5>;
-            bindings = <&kp TAB>;
         };
 		
         combo_ENTER {
             timeout-ms = <50>;
-            key-positions = <3 13>;
-			layers = <5>;
+            key-positions = <KEY_N KEY_T>;
+			layers = <ONEHAND>;
+            bindings = <&kp ENTER>;
+        };
+		
+        combo_DELETE{
+            timeout-ms = <50>;
+            key-positions = <KEY_E KEY_R>;
+			layers = <ONEHAND>;
             bindings = <&kp ENTER>;
         };
 		
         combo_SHIFT {
             timeout-ms = <50>;
-            key-positions = <0 1 2 13>;
-			layers = <5>;
+            key-positions = <KEY_I KEY_R>;
+			layers = <ONEHAND>;
             bindings = <&sk LSHIFT>;
         };
 		
-        combo_lock_SHIFT {
+        combo_LOCK_SHIFT {
             timeout-ms = <50>;
-            key-positions = <2 12>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_I KEY_E KEY_T>;
+			layers = <ONEHAND>;
             bindings = <&kt LSHIFT>;
+        };
+		
+        combo_BACKSPACE {
+            timeout-ms = <50>;
+            key-positions = <KEY_E KEY_S>;
+			layers = <ONEHAND>;
+            bindings = <&kp BSPC>;
+        };
+		
+        combo_BACKSPACE_TWO {
+            timeout-ms = <50>;
+            key-positions = <KEY_E KEY_T>;
+			layers = <ONEHAND>;
+            bindings = <&kp BSPC>;
         };
 		
 		
         combo_Umlaute {
             timeout-ms = <50>;
-            key-positions = <1 11>;
-			layers = <5>;
+            key-positions = <KEY_O KEY_A>;
+			layers = <ONEHAND>;
             bindings = <&kp LA(U)>;
         };
+		
+		
+        combo_Play_Pause1 {
+            timeout-ms = <50>;
+            key-positions = <KEY_N KEY_A KEY_R KEY_S>;
+			layers = <ONEHAND>;
+            bindings = <&kp C_PLAY_PAUSE>;
+        };
+		
 		
 		
 		
         combo_zero {
             timeout-ms = <50>;
-            key-positions = <11 12>;
-			layers = <6>;
+            key-positions = <KEY_8 KEY_2>;
+			layers = <ONENUM>;
             bindings = <&kp N0>;
+        };
+		
+        combo_three {
+            timeout-ms = <50>;
+            key-positions = <KEY_1 KEY_2>;
+			layers = <ONENUM>;
+            bindings = <&kp N3>;
+        };
+	
+	combo_five {
+            timeout-ms = <50>;
+            key-positions = <KEY_1 KEY_4>;
+			layers = <ONENUM>;
+            bindings = <&kp N5>;
+	};
+
+		
+        combo_six {
+            timeout-ms = <50>;
+            key-positions = <KEY_2 KEY_4>;
+			layers = <ONENUM>;
+            bindings = <&kp N6>;
         };
 		
         combo_seven {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <6>;
+            key-positions = <KEY_1 KEY_2 KEY_4>;
+			layers = <ONENUM>;
             bindings = <&kp N7>;
-        };
-		
-        combo_eight {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-			layers = <6>;
-            bindings = <&kp N8>;
         };
 		
         combo_nine {
             timeout-ms = <50>;
-            key-positions = <1 2 3>;
-			layers = <6>;
+            key-positions = <KEY_8 KEY_1>;
+			layers = <ONENUM>;
             bindings = <&kp N9>;
         };
 		
-        combo_numdot {
-            timeout-ms = <50>;
-            key-positions = <11 12 13>;
-			layers = <6>;
-            bindings = <&kp DOT>;
-        };
 		
-        combo_numcomma {
+        combo_numeuro {
             timeout-ms = <50>;
-            key-positions = <12 13>;
-			layers = <6>;
-            bindings = <&kp COMMA>;
+            key-positions = <KEY_E KEY_N>;
+			layers = <ONENUM>;
+            bindings = <&kp LS(LA(2))>;
         };
 		
 		
@@ -367,239 +410,245 @@
 		
         combo_less {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <7>;
+            key-positions = <KEY_O KEY_I>;
+			layers = <ONEPAR>;
             bindings = <&kp LESS_THAN>;
         };
 		
         combo_greater {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <7>;
+            key-positions = <KEY_I KEY_E>;
+			layers = <ONEPAR>;
             bindings = <&kp GREATER_THAN>;
         };
 		
         combo_tilda {
             timeout-ms = <50>;
-            key-positions = <10 11>;
-			layers = <7>;
+            key-positions = <KEY_A KEY_R>;
+			layers = <ONEPAR>;
             bindings = <&kp TILDE>;
         };
 		
         combo_circ {
             timeout-ms = <50>;
-            key-positions = <11 12>;
-			layers = <7>;
+            key-positions = <KEY_R KEY_S>;
+			layers = <ONEPAR>;
             bindings = <&kp CARET>;
         };
 		
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
-			layers = <7>;
+            key-positions = <KEY_A KEY_R KEY_S>;
+			layers = <ONEPAR>;
             bindings = <&kp GRAVE>;
         };
 		
 		
 		
 		
-        combo_previous {
+        combo_new_tab {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <8>;
-            bindings = <&kp C_PREV>;
+            key-positions = <KEY_I KEY_R>;
+			layers = <ONEMED>;
+            bindings = <&kp LG(T)>;
         };
 		
-        combo_next {
+        combo_cmd_new {
             timeout-ms = <50>;
-            key-positions = <2 3>;
-			layers = <8>;
-            bindings = <&kp C_NEXT>;
-        };	
-			
-        combo_playpause {
+            key-positions = <KEY_E KEY_S>;
+			layers = <ONEMED>;
+            bindings = <&kp LG(N)>;
+        };
+		
+        combo_close {
             timeout-ms = <50>;
-            key-positions = <1 2 3>;
-			layers = <8>;
-            bindings = <&kp C_PLAY_PAUSE>;
+            key-positions = <KEY_N KEY_T>;
+			layers = <ONEMED>;
+            bindings = <&kp LG(W)>;
+        };
+		
+   
+        combo_reload {
+            timeout-ms = <50>;
+            key-positions = <KEY_I KEY_E KEY_N>;
+			layers = <ONEMED>;
+            bindings = <&kp LG(R)>;
         };
 		
         combo_cmd_z {
             timeout-ms = <50>;
-            key-positions = <11 12>;
-			layers = <8>;
+            key-positions = <KEY_R KEY_S>;
+			layers = <ONEMED>;
             bindings = <&kp LG(Z)>;
         };
+		
+        combo_cmd_shft_z {
+            timeout-ms = <50>;
+            key-positions = <KEY_R KEY_S>;
+			layers = <ONEMED>;
+            bindings = <&kp LG(LS(Z))>;
+        };
+		
+		
 		
 			
         combo_at {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <9>;
+            key-positions = <KEY_O KEY_I>;
+			layers = <ONEPUNC>;
             bindings = <&kp AT >;
         };
 			
         combo_backslash {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <9>;
+            key-positions = <KEY_I KEY_E>;
+			layers = <ONEPUNC>;
             bindings = <&kp BACKSLASH>;
         };
 			
         combo_percent {
             timeout-ms = <50>;
-            key-positions = <0 1 2>;
-			layers = <9>;
+            key-positions = <KEY_A KEY_R KEY_S>;
+			layers = <ONEPUNC>;
             bindings = <&kp PERCENT>;
         };
 			
         combo_pipe {
             timeout-ms = <50>;
-            key-positions = <10 11>;
-			layers = <9>;
+            key-positions = <KEY_A KEY_R>;
+			layers = <ONEPUNC>;
             bindings = <&kp PIPE>;
         };
 			
         combo_ampersand {
             timeout-ms = <50>;
-            key-positions = <11 12>;
-			layers = <9>;
+            key-positions = <KEY_R KEY_S>;
+			layers = <ONEPUNC>;
             bindings = <&kp AMPERSAND>;
         };
 			
-        combo_plus {
-            timeout-ms = <50>;
-            key-positions = <10 11 12>;
-			layers = <9>;
-            bindings = <&kp PLUS>;
-        };
 				
 			
 			
         combo_toggle_mouse {
             timeout-ms = <50>;
-            key-positions = <1 3 12>;
-			layers = <5 10>;
+            key-positions = <KEY_I KEY_N KEY_S>;
+			layers = <ONEHAND ONEMOUSE>;
             bindings = <&tog ONEMOUSE>;
         };
 			
-
+			
+			
         combo_middle_click {
             timeout-ms = <50>;
-            key-positions = <11 13>;
-			layers = <9 10>;
+            key-positions = <KEY_I KEY_N>;
+			layers = <ONEMOUSE ONESCROL>;
             bindings = <&mkp MCLK>;
-        };	
+        };
 		
-			
+		
 			
         combo_toggle_arrows {
             timeout-ms = <50>;
-            key-positions = <2 11 13>;
-			layers = <5 12>;
+            key-positions = <KEY_E KEY_R KEY_T>;
+			layers = <ONEHAND ONEARR>;
             bindings = <&tog ONEARR>;
         };	
 		
 		
 			
-        combo_cmd_grave {
+        combo_arrow_backspace {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-			layers = <12>;
-            bindings = <&kp LG(GRAVE)>;
+            key-positions = <KEY_N KEY_T>;
+			layers = <ONEARR>;
+            bindings = <&kp BSPC>;
         };	
 		
-			
-        combo_cmd_tab {
+        combo_arrow_enter {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-			layers = <12>;
-            bindings = <&kp LG(TAB)>;
+            key-positions = <KEY_E KEY_S>;
+			layers = <ONEARR>;
+            bindings = <&kp ENTER>;
         };	
 		
-			
-        combo_toggle_arrows2 {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-			layers = <12>;
-            bindings = <&tog ONEARR>;
-        };	
 		
 
 			
         combo_one_shotF {
             timeout-ms = <50>;
-            key-positions = <2 3 12 13>;
-			layers = <5>;
-            bindings = <&sl ONEF>;
+            key-positions = <KEY_E KEY_N KEY_S KEY_T>;
+			layers = <ONEHAND>;
+            bindings = <&sl FKEYS>;
         };
 		
 		
 		
         combo_F9 {
             timeout-ms = <50>;
-            key-positions = <0 10>;
-			layers = <13>;
+            key-positions = <KEY_O KEY_A>;
+			layers = <FKEYS>;
             bindings = <&kp F9>;
         };		
 		
 		
         combo_F10 {
             timeout-ms = <50>;
-            key-positions = <1 11>;
-			layers = <13>;
+            key-positions = <KEY_I KEY_R>;
+			layers = <FKEYS>;
             bindings = <&kp F10>;
         };		
 		
         combo_F11 {
             timeout-ms = <50>;
-            key-positions = <2 12>;
-			layers = <13>;
+            key-positions = <KEY_E KEY_S>;
+			layers = <FKEYS>;
             bindings = <&kp F11>;
         };		
 		
         combo_F12 {
             timeout-ms = <50>;
-            key-positions = <3 13>;
-			layers = <13>;
+            key-positions = <KEY_N KEY_T>;
+			layers = <FKEYS>;
             bindings = <&kp F12>;
         };	
 		
 		
 		combo_toggle_fun_layer {
             timeout-ms = <50>;
-            key-positions = <0 1 10 11>;
-			layers = <ONEHAND ONEFUN>;
-            bindings = <&tog ONEFUN>;
+            key-positions = <KEY_O KEY_I KEY_A KEY_R>;
+			layers = <ONEHAND FUNTIME>;
+            bindings = <&tog FUNTIME>;
 		};
 		
 		combo_fun_next_tab {
             timeout-ms = <50>;
-            key-positions = <3 13>;
-			layers = <ONEFUN>;
+            key-positions = <KEY_N KEY_T>;
+			layers = <FUNTIME>;
             bindings = <&kp LC(TAB)>;
 		};
 		
 		combo_fun_last_tab {
             timeout-ms = <50>;
-            key-positions = <2 12>;
-			layers = <ONEFUN>;
+            key-positions = <KEY_E KEY_S>;
+			layers = <FUNTIME>;
             bindings = <&kp LS(LC(TAB))>;
 		};
 		
 		combo_fun_close_tab {
             timeout-ms = <50>;
-            key-positions = <1 11>;
-			layers = <ONEFUN>;
+            key-positions = <KEY_I KEY_R>;
+			layers = <FUNTIME>;
             bindings = <&kp LG(W)>;
 		};
 		
 		combo_fun_toggle_out {
             timeout-ms = <50>;
-            key-positions = <0 10>;
-			layers = <ONEFUN>;
-            bindings = <&tog ONEFUN>;
+            key-positions = <KEY_O KEY_A>;
+			layers = <FUNTIME>;
+            bindings = <&tog FUNTIME>;
 		};
+		
+		
 		
     };
 
@@ -656,20 +705,20 @@
 						   
 		one_hand_layer {
 		                          bindings = <                                 
-		     &lt ONEMED O &kp I  &kp E   &lt ONEPAR N    &none        &none        &none    &none    &none &none
-		     &lt ONENUM A &kp R  &kp S   &lt ONEPUNC T   &none        &none        &none    &none    &none &none
-		     &none        &none  &none   &none           &tog ONEHAND &none        &none    &none    &none &none
-		                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		     &lt ONEMED O &kp I        &kp E         &lt ONEPAR N    &none        &none        &none    &none    &none &none
+		     &lt ONENUM A &kp R        &kp S         &lt ONEPUNC T   &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                             &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
 
 		one_hand_numbers {
 		                          bindings = <                                 
-		     &none        &kp N4 &kp N5 &kp N6            &none        &none        &none    &none    &none &none
-		     &trans       &kp N1 &kp N2 &kp N3            &none        &none        &none    &none    &none &none
-		     &none        &none  &none  &none             &tog ONEHAND &none        &none    &none    &none &none
-		                                &mt LSHIFT BSPC   &kp SPACE    &none        &none  
+		     &none        &kp N4       &kp N5        &kp N6            &none        &none        &none    &none    &none &none
+		     &trans       &kp N1       &kp N2        &kp N3            &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none             &tog DEFAULT &none        &none    &none    &none &none
+		                                             &mt LSHIFT BSPC   &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -677,20 +726,20 @@
 
 		one_hand_parenthesis {
 		                          bindings = <                                 
-		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans          &none       &none        &none    &none    &none &none
-		     &kp RIGHT_BRACE &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none           &none       &none        &none    &none    &none &none
-		     &none           &none             &none                &tog ONEHAND    &none       &none        &none    &none    &none &none
-		                                                            &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &kp LEFT_BRACE  &kp LPAR          &kp RPAR             &trans          &none        &none        &none    &none    &none &none
+		     &kp RIGHT_BRACE &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &none           &none        &none        &none    &none    &none &none
+		     &tog ONEHAND    &tog ONEFUN       &tog ONEVAMP         &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                                            &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
 
 		one_hand_media {
 		                          bindings = <                                 
-		     &trans    &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &none           &none        &none    &none    &none &none
-		     &none     &kp LG(X)     &kp LG(C)      &kp LG(V)    &none           &none        &none    &none    &none &none
-		     &none     &none         &none          &none        &tog ONEHAND    &none        &none    &none    &none &none
-		                                                         &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &trans       &kp C_VOL_DN &kp C_MUTE    &kp C_VOL_UP    &none        &none        &none    &none    &none &none
+		     &none        &kp LG(X)    &kp LG(C)     &kp LG(V)       &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                             &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -699,8 +748,8 @@
 		                          bindings = <                                 
 		     &kp DOLLAR &kp ASTERISK  &kp UNDERSCORE &none        &none           &none        &none    &none    &none &none
 		     &kp HASH   &kp EQUAL     &kp MINUS      &trans       &none           &none        &none    &none    &none &none
-		     &none      &none         &none          &none        &tog ONEHAND    &none        &none    &none    &none &none
-		                                                          &mt LSHIFT BSPC &kp SPACE   &none        &none  
+		     &tog ONEHAND &tog ONEFUN &tog ONEVAMP   &none        &tog DEFAULT    &none        &none    &none    &none &none
+		                                             &mt LSHIFT BSPC &kp SPACE   &none        &none  
 		                           >;
 					
         };
@@ -709,7 +758,7 @@
 		                          bindings = <                                 
 		     &tog ONEMOUSE &mkp RCLK      &mmv MOVE_UP   &mkp LCLK       &none        &none        &none    &none    &none &none
 		     &mo ONESCROL  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none        &none        &none    &none    &none &none
-		     &none         &none          &none          &none           &tog ONEHAND &none        &none    &none    &none &none
+		     &tog ONEHAND  &tog ONEFUN    &tog ONEVAMP   &none           &tog DEFAULT &none        &none    &none    &none &none
 		                                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
@@ -717,9 +766,9 @@
 		
 		one_hand_scroll {
 		                          bindings = <                                 
-		     &none         &mkp RCLK        &mwh SCROLL_UP   &mkp LCLK         &none        &none        &none    &none    &none &none
-		     &mo ONESCROL  &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &none        &none        &none    &none    &none &none
-		     &none         &none            &none            &none             &tog ONEHAND &none        &none    &none    &none &none
+		     &none         &mkp RCLK          &mwh SCROLL_UP   &mkp LCLK         &none        &none        &none    &none    &none &none
+		     &mo ONESCROL  &mwh SCROLL_LEFT   &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &none        &none        &none    &none    &none &none
+		     &tog ONEHAND  &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
 		                                                     &mt LSHIFT BSPC   &kp SPACE    &none        &none  
 		                           >;
 					
@@ -729,10 +778,10 @@
 		
 		one_hand_arrows {
 		                          bindings = <                                 
-		     &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)   &none        &none        &none    &none    &none &none
-		     &kp LEFT      &kp DOWN       &kp UP         &kp RIGHT       &none        &none        &none    &none    &none &none
-		     &none         &none          &none          &none           &tog ONEHAND &none        &none    &none    &none &none
-		                                                 &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		     &kp LC(LEFT) &kp LC(DOWN)       &kp LC(UP)    &kp LC(RIGHT)   &none        &none        &none    &none    &none &none
+		     &kp LEFT     &kp DOWN           &kp UP        &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                                   &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -740,10 +789,10 @@
 		
 		one_hand_fkeys {
 		                          bindings = <                                 
-		     &kp F1   &kp F2    &kp F3      &kp F4          &none        &none        &none    &none    &none &none
-		     &kp F5   &kp F6    &kp F7      &kp F8          &none        &none        &none    &none    &none &none
-		     &none    &none     &none       &none           &tog ONEHAND &none        &none    &none    &none &none
-		                                    &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		     &kp F1       &kp F2       &kp F3        &kp F4          &none        &none        &none    &none    &none &none
+		     &kp F5       &kp F6       &kp F7        &kp F8          &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                                   &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
@@ -751,10 +800,21 @@
 		
 		one_hand_fun_media {
 		                          bindings = <                                 
-		     &kp ESC  &kp UP    &kp LEFT    &kp RIGHT       &none        &none        &none    &none    &none &none
-		     &kp F    &kp DOWN  &kp RET     &kp SPACE       &none        &none        &none    &none    &none &none
-		     &none    &none     &none       &none           &tog ONEHAND &none        &none    &none    &none &none
-		                                    &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		     &kp ESC      &kp UP       &kp LEFT      &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &kp F        &kp DOWN     &kp RET       &kp SPACE       &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                                   &mt LSHIFT BSPC &kp SPACE    &none        &none  
+		                           >;
+					
+        };
+		
+		
+		one_hand_vampire {
+		                          bindings = <                                 
+		     &kp ESC      &none        &kp UP        &kp ENTER       &none        &none        &none    &none    &none &none
+		     &to DEFAULT  &kp LEFT     &kp DOWN      &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
+		                                                   &mt LSHIFT BSPC &kp SPACE    &none        &none  
 		                           >;
 					
         };
