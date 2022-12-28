@@ -28,14 +28,14 @@
 #define KEY_I 1
 #define KEY_O 0
 // ARST Row
-#define KEY_T 10
-#define KEY_S 11
-#define KEY_R 12
-#define KEY_A 13
+#define KEY_T 13
+#define KEY_S 12
+#define KEY_R 11
+#define KEY_A 10
 
-#define KEY_1 12
-#define KEY_2 13
-#define KEY_4 14
+#define KEY_1 11
+#define KEY_2 12
+#define KEY_4 13
 #define KEY_8 1
 
 
