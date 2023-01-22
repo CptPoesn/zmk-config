@@ -800,7 +800,7 @@
 		
 		one_hand_fun_media {
 		                          bindings = <                                 
-		     &lt MEDIA ESC      &kp UP       &kp LEFT      &kp RIGHT       &none        &none        &none    &none    &none &none
+		     &lt ONEMED ESC      &kp UP       &kp LEFT      &kp RIGHT       &none        &none        &none    &none    &none &none
 		     &kp F        &kp DOWN     &kp RET       &kp SPACE       &none        &none        &none    &none    &none &none
 		     &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
 		                                                   &mt LSHIFT BSPC &kp SPACE    &none        &none  
