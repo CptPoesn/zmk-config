@@ -767,7 +767,7 @@
 		
 		fun_media {
 				                          bindings = <                                 
-				     &kp ESC  &kp UP    &kp LEFT    &kp RIGHT
+				     &lt MEDIA ESC  &kp UP    &kp LEFT    &kp RIGHT
 				     &kp F    &kp DOWN  &kp RET     &kp C_PLAY_PAUSE
 				                           >;
 					
