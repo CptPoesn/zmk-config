@@ -683,9 +683,9 @@
 						   
 		raise_layer {
 		                          bindings = <                                 
-		     &mwh SCROLL_DOWN &mwh SCROLL_LEFT &mmv MOVE_UP   &mwh SCROLL_RIGHT &kp LBRC         &kp RBRC         &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT)
-		     &mwh SCROLL_UP   &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LPAR         &kp RPAR         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
-		     &kp  C_MUTE      &mkp MCLK         &mkp RCLK       &mkp LCLK         &kp LBKT       &kp RBKT         &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT 
+		     &mwh SCROLL_DOWN &mwh SCROLL_LEFT &mmv MOVE_UP   &mwh SCROLL_RIGHT &kp LBRC         &kp RBRC         &kp LC(LEFT)     &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT)
+		     &mwh SCROLL_UP   &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LPAR         &kp RPAR         &kp LEFT         &kp DOWN     &kp UP       &kp RIGHT
+		     &kp  C_MUTE      &mkp MCLK         &mkp RCLK       &mkp LCLK         &kp LBKT       &kp RBKT         &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE 
 		                            	                      &mo ADJUST        &kp C_PLAY_PAUSE &bootloader   &trans 
 		        >;
 		};
