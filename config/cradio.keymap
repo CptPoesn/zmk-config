@@ -667,7 +667,7 @@
         default_layer {
             bindings = <
             &kp Q           &kp W       &kp F       &kp P       &kp G           &kp J           &kp L       &kp U       &kp Y       &kp SEMI
-            &kp A           &mt LALT R  &mt LGUI S  &mt LCTRL T &kp D           &kp H           &mt LCTRL N &mt LGUI E  &mt LALT I  &kp O 
+            &lt HYPER A     &mt LALT R  &mt LGUI S  &mt LCTRL T &kp D           &kp H           &mt LCTRL N &mt LGUI E  &mt LALT I  &kp O 
             &kp Z           &kp X       &kp C       &kp V       &kp B           &kp K           &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                                     &mo LOWER   &mt LSHIFT BSPC &kp SPC         &mo RAISE
             >;
@@ -703,8 +703,8 @@
 		
 		hyper_layer {
 		                          bindings = <                                 
-		     &tog ONEHAND  &none         &none            &kp LG(S)     &bootloader        &bootloader &none  &none &none &none 
-		     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &none       &none  &none &none &none 
+		     &tog ONEHAND  &kp C_VOL_UP  &none            &kp LG(S)     &bootloader        &bootloader &none  &none &none &none 
+		     &none         &kp C_VOL_DN  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &none       &none  &none &none &none 
 		     &kp LG(Z)     &kp LG(X)     &kp LG(C)        &kp LG(V)     &mkp RCLK          &none       &none  &none &none &none
 		                            	                  &trans        &trans             &trans      &trans  
 		        >;
