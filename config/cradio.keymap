@@ -10,18 +10,19 @@
 #define LOWER    1
 #define RAISE    2
 #define ADJUST   3
-#define GAME     4
-#define ONEHAND  5
-#define ONENUM   6
-#define ONEPAR   7
-#define ONEMED   8
-#define ONEPUNC  9
-#define ONEMOUSE 10
-#define ONESCROL 11
-#define ONEARR   12
-#define ONEF     13
-#define ONEFUN   14
-#define ONEVAMP  15
+#define HYPER	 4
+#define GAME     5
+#define ONEHAND  6
+#define ONENUM   7
+#define ONEPAR   8
+#define ONEMED   9
+#define ONEPUNC  10
+#define ONEMOUSE 11
+#define ONESCROL 12
+#define ONEARR   13
+#define ONEF     14
+#define ONEFUN   15
+#define ONEVAMP  16
 
 
 #define KEY_N 3
@@ -677,7 +678,7 @@
 		     &kp ESC        &kp DQT     &kp SQT     &kp AMPS    &kp DLLR        &kp AT          &kp N7      &kp N8      &kp N9 &kp PLUS 
 		     &kp TAB        &kp PIPE    &kp CARET   &kp EXCL    &kp UNDER       &kp RET         &kp N4      &kp N5      &kp N6 &kp MINUS 
 		     &kp GRAVE      &kp BSLH    &kp PRCNT   &kp EQUAL   &kp TILDE       &kp POUND       &kp N1      &kp N2      &kp N3 &kp ASTRK
-		                            	            &trans      &bootloader     &kp N0          &mo ADJUST  
+		                            	            &trans      &mo HYPER       &kp N0          &mo ADJUST  
 		        >;
 		};
 						   
@@ -685,8 +686,8 @@
 		                          bindings = <                                 
 		     &mwh SCROLL_DOWN &mwh SCROLL_LEFT &mmv MOVE_UP   &mwh SCROLL_RIGHT &kp LBRC         &kp RBRC         &kp LC(LEFT)     &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT)
 		     &mwh SCROLL_UP   &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LPAR         &kp RPAR         &kp LEFT         &kp DOWN     &kp UP       &kp RIGHT
-		     &kp  C_MUTE      &mkp MCLK         &mkp RCLK       &mkp LCLK         &kp LBKT       &kp RBKT         &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE 
-		                            	                      &mo ADJUST        &kp C_PLAY_PAUSE &bootloader   &trans 
+		     &kp  C_MUTE      &mkp MCLK        &mkp RCLK      &mkp LCLK         &kp LBKT         &kp RBKT         &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE 
+		                            	                      &mo ADJUST        &kp C_PLAY_PAUSE &mo HYPER &trans 
 		        >;
 		};
 	
@@ -697,6 +698,15 @@
 		     &kp F5      &kp F6    &kp F7    &kp F8  &none      &bt BT_SEL 0 &none        &none        &none        &none 
 		     &kp F9      &kp F10   &kp F11   &kp F12 &none      &bt BT_CLR   &none        &none        &none        &tog GAME
 		                            	     &trans  &none      &none        &trans  
+		        >;
+		};	 
+		
+		hyper_layer {
+		                          bindings = <                                 
+		     &tog ONEHAND  &none         &none            &kp LC(LG(Z)) &bootloader        &bootloader &none  &none &none &none 
+		     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE &C_MUTE       &mmv LCLK          &none       &none  &none &none &none 
+		     &kp LC(LG(Z)) &kp LC(LG(Z)) &kp LC(LG(Z))    &kp LC(LG(Z)) &mmv RCLK          &none       &none  &none &none &none
+		                            	                  &trans        &trans             &trans      &trans  
 		        >;
 		};	 
 		
