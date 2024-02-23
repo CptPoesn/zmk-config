@@ -703,9 +703,9 @@
 		
 		hyper_layer {
 		                          bindings = <                                 
-		     &tog ONEHAND  &none         &none            &kp LG(Z)     &bootloader        &bootloader &none  &none &none &none 
-		     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE &kp C_MUTE    &mmv LCLK          &none       &none  &none &none &none 
-		     &kp LG(Z)     &kp LG(Z)     &kp LG(Z)        &kp LG(Z)     &mmv RCLK          &none       &none  &none &none &none
+		     &tog ONEHAND  &none         &none            &kp LG(S)     &bootloader        &bootloader &none  &none &none &none 
+		     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &none       &none  &none &none &none 
+		     &kp LG(Z)     &kp LG(X)     &kp LG(C)        &kp LG(V)     &mkp RCLK          &none       &none  &none &none &none
 		                            	                  &trans        &trans             &trans      &trans  
 		        >;
 		};	 
