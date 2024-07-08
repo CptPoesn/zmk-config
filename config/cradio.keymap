@@ -704,8 +704,8 @@
 		
 		hyper_layer {
 		                          bindings = <                                 
-		     &tog ONEHAND  &kp C_VOL_UP  &kp LG(LS(4))    &kp LG(S)     &bootloader        &bootloader &none  &none &none &none 
-		     &none         &kp C_VOL_DN  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &none       &none  &none &none &none 
+		     &tog ONEHAND  &kp C_VOL_UP  &kp LG(LS(4))    &kp LG(S)     &bootloader        &bootloader &none           &mmv MOVE_UP   mkp RCLK        &tog GAME
+		     &none         &kp C_VOL_DN  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp LCLK 
 		     &kp LG(Z)     &kp LG(X)     &kp LG(C)        &kp LG(V)     &mkp RCLK          &none       &none  &none &none &none
 		                            	                  &trans        &trans             &trans      &trans  
 		        >;
