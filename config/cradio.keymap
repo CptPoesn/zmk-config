@@ -707,7 +707,7 @@
 		     &tog ONEHAND  &kp C_VOL_UP  &kp LG(LS(4))    &kp LG(S)     &bootloader        &bootloader &none           &mmv MOVE_UP   &mkp RCLK       &tog GAME
 		     &mkp LCLK     &kp C_VOL_DN  &kp C_PLAY_PAUSE &kp C_MUTE    &mkp LCLK          &mkp LCLK   &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp LCLK 
 		     &kp LG(Z)     &kp LG(X)     &kp LG(C)        &kp LG(V)     &mkp RCLK          &mkp RCLK   &none  &none &none &none
-		                            	                  &trans        &trans             &trans      &trans  
+		                            	                  &trans        &mkp LCLK          &trans      &trans  
 		        >;
 		};	 
 		
