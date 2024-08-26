@@ -865,10 +865,10 @@ combos {
         
         ftl {
             bindings = <
-            &kp N1  &kp N2 &kp N3  &kp N4  &kp N5      &none        &none    &none    &none &none
-            &kp A   &kp S  &kp D   &kp F   &kp G       &none        &none    &none    &none &tog FTL
-            &kp Z   &kp X  &kp C   &kp V   &kp LALT    &none        &none    &none    &none &tog FTL
-            &kp TAB &mt LSHIFT SPC                         &none        &none
+            &kp N1         &kp N2 &kp N3  &kp N4  &kp N5      &none        &none    &none    &none &none
+            &kp A          &kp S  &kp D   &kp F   &kp G       &none        &none    &none    &none &tog FTL
+            &kp Z          &kp X  &kp C   &kp V   &kp LALT    &none        &none    &none    &none &tog FTL
+            &mt LSHIFT TAB &kp SPC                         &none        &none
             >;
             
         };
