@@ -36,6 +36,7 @@
 #define ONEF     15
 #define ONEFUN   16
 #define ONEVAMP  17
+#define FTL      18
 
 
 #define KEY_N 3
@@ -710,7 +711,7 @@ combos {
         adjust_layer {
             bindings = <
             &kp F1      &kp F2    &kp F3    &kp F4  &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-            &kp F5      &kp F6    &kp F7    &kp F8  &none      &bt BT_SEL 0 &none        &none        &none        &none
+            &kp F5      &kp F6    &kp F7    &kp F8  &none      &bt BT_SEL 0 &none        &none        &none        &tog FTL
             &kp F9      &kp F10   &kp F11   &kp F12 &none      &bt BT_CLR   &none        &none        &none        &tog GAME
             &trans  &none      &none        &trans
             >;
@@ -858,6 +859,16 @@ combos {
             &to DEFAULT  &kp LEFT     &kp DOWN      &kp RIGHT       &none        &none        &none    &none    &none &none
             &tog ONEHAND &tog ONEFUN  &tog ONEVAMP  &none           &tog DEFAULT &none        &none    &none    &none &none
             &mt LSHIFT BSPC &kp SPACE    &none        &none
+            >;
+            
+        };
+        
+        ftl {
+            bindings = <
+            &kp N1  &N2    &kp N3  &kp N4    &N5         &none        &none    &none    &none &none
+            &kp A   &kp S  &kp D   &kp F     &kp G       &none        &none    &none    &none &TOG FTL
+            &kp Z   &kp X  &kp C   &kp SLASH &kg LALT    &none        &none    &none    &none &TOG FTL
+            &kp LALT &mt LSHIFT SPC                         &none        &none
             >;
             
         };
