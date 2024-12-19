@@ -683,7 +683,7 @@ combos {
         default_layer {
             bindings = <
             &kp Q           &kp W       &kp F       &kp P       &kp G           &kp J           &kp L       &kp U       &kp Y       &kp SEMI
-            &lt HYPER A     &mt LALT R  &mt LGUI S  &mt LCTRL T &mt LG(RALT) D  &mt LG(RALT) H  &mt LCTRL N &mt LGUI E  &mt RALT I  &lt HYPER O
+            &lt HYPER A     &mt LALT R  &mt LGUI S  &mt LCTRL T &mt CAPS D      &mt CAPS H  &mt LCTRL N &mt LGUI E  &mt RALT I  &lt HYPER O
             &kp Z           &kp X       &kp C       &kp V       &kp B           &kp K           &kp M       &kp COMMA   &kp DOT     &kp FSLH
             &mo LOWER   &mt LSHIFT BSPC &kp SPC         &mo RAISE
             >;
